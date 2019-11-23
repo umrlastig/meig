@@ -48,6 +48,34 @@ table th {
   list-style: square inside;
 }
 
+
+[data-tooltip]:before {            
+    /* needed - do not touch */
+    content: attr(data-tooltip);
+    position: absolute;
+    opacity: 0;
+    
+    /* customizable */
+    transition: all 0.15s ease;
+    padding: 10px;
+    color: #F84C1E;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px silver;    
+}
+[data-tooltip]:hover:before {        
+    /* needed - do not touch */
+    opacity: 1;
+    
+    /* customizable */
+    background: white;
+    margin-top: 50px;
+    margin-left: 20px;   
+}
+[data-tooltip]:not([data-tooltip-persistent]):before {
+    pointer-events: none;
+}
+
+
 a{
 	background-color:transparent
 }

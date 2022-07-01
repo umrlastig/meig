@@ -35,15 +35,14 @@
 -->
 <script src="js/papaparse.min.js"></script>
 <script src="js/people.js"></script>
-<!--
 <script src="js/news.js"></script>
 <script src="js/recruiting.js"></script>
--->
+
 
 </head>
 
-<!-- displayRecruiting();displayNews();getPublicationsAuthor('bruno-vallet');getPublicationsAuthor('valerie-gouet-brunet'); -->
-<body id="page-top" onload="displayPeople();">
+<!-- getPublicationsAuthor('bruno-vallet');getPublicationsAuthor('valerie-gouet-brunet'); -->
+<body id="page-top" onload="displayPeople();displayRecruiting();displayNews();">
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
 	<select class="selectpicker" data-width="fit" id="select-lang">
@@ -78,13 +77,13 @@
 				<span class="lang-fr"> Sujets de recherche </span>
 			</a>
 		</li>
-		<!--
 		<li class="nav-item">
 			<a class="nav-link js-scroll-trigger" href="#news"><span class="lang-en"> News </span> <span class="lang-fr"> Actualités </span></a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link js-scroll-trigger" href="#recruiting"><span class="lang-en"> Job offers </span> <span class="lang-fr"> Offres d'emploi </span></a>
 		</li>
+		<!--
 		<li class="nav-item">
 			<a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
 		</li>
@@ -410,6 +409,42 @@
 </div>
 </section>
   	
+
+<hr class="m-0">
+
+
+<!-- ==============================================================================================================================   -->
+<!--       Actualités        -->
+<!-- ==============================================================================================================================   -->
+<section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="news">
+<div class="w-100">
+<h2 class="mb-5 lang-en">News</h2>
+<h2 class="mb-5 lang-fr">Actualités</h2>
+<ul class="fa-ul mb-0" id="news-container">
+</ul>
+</div>
+</section>
+
+
+<hr class="m-0">
+
+<!-- ==============================================================================================================================   -->
+<!--       Offres d'emploi        -->
+<!-- ==============================================================================================================================   -->
+<section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="recruiting">
+<div class="container">
+<div class="row title text-center">
+<div class="col-lg-8 mx-auto">
+<h2 class="margin-top lang-en">Job offers</h2>
+<h2 class="margin-top lang-fr">Offres d'emploi</h2>
+</div>
+</div>
+<div class="fa-ul mb-0" id="offers-container">
+<h5 class="mt-2 mb-5 lang-en" style='padding-left:48px;font-style: italic;'>no offer at the moment</h5>
+<h5 class="mt-2 mb-5 lang-fr" style='padding-left:48px;font-style: italic;'>aucune offre en ce moment</h5>
+</div>
+</div>
+</section>
 
 
 <hr class="m-0">

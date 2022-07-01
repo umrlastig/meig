@@ -39,7 +39,7 @@ function parseCSVfile() {
 				// console.log("Row:", row.data);
 				if(row.data[0].type != ""){
 					var parent = document.getElementById("offers-container");
-					if(row.data[0].team == "ACTE"){
+					if(row.data[0].team == "MEIG"){
 						divForJob(parent, row.data);
 					}
 				}

@@ -1,0 +1,73 @@
+
+
+
+/* ==========================
+ --- Language ---
+============================= */
+body.en :lang(fr) {
+  display: none;
+}
+
+body.fr :lang(en){
+  display: none;
+}
+
+.flag-icon-background {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.flag-icon {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 1.33333333em;
+  line-height: 1em;
+}
+.flag-icon:before {
+  content: "\00a0";
+}
+.flag-icon.flag-icon-squared {
+  width: 1em;
+}
+.flag-icon-fr {
+  background-image: url('../img/icons/fr.svg');
+}
+.flag-icon-us {
+  background-image: url('../img/icons/us.svg');
+}
+
+
+/* Members */
+.img-member{
+  width:100px;
+  height:100px;
+}
+
+.container {
+	position: relative;
+	z-index: 1;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+  width:100px;
+  height:100px
+}
+
+.people{
+  display: inline-table;
+	height:auto;
+}
+
+.text-status{
+  font-size: 95%;
+}
+
+.news {
+  color: black;
+  font-size: 120%;
+  font: economica
+}

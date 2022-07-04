@@ -28,11 +28,9 @@
 <link href="css/LASTIG.css" rel="stylesheet">
 
 <!-- scripts on load -->
-<!--
 <script src="vendor/d3/d3.min.js"></script>
 <script src="js/reviewing.js" charset="utf-8"></script>
 <script src="js/hal.js" charset="utf-8"></script>
--->
 <script src="js/papaparse.min.js"></script>
 <script src="js/people.js"></script>
 <script src="js/news.js"></script>
@@ -122,11 +120,10 @@
 				<span class="lang-fr"> Offres d'emploi </span>
 			</a>
 		</li>
-		<!--
 		<li class="nav-item">
-			<a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+			<a class="nav-link js-scroll-trigger" href="#publications" style="color:#000;">
+				Publications</a>
 		</li>
-		-->
 		
 	</ul>
 	</div>
@@ -614,10 +611,42 @@
 <hr class="m-0">
 
 
+<!-- ==============================================================================================================================   -->
+<!--       Publication        -->
+<!-- ==============================================================================================================================   -->
+
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="publications">
+<div class="w-100">
+<h2 class="mb-5">Publications</h2>
+
+<span id="pubACL"><div class="subheading mb-3 mt-3">[ACL] Journals</div></span>
+<span id="pubACLN"><div class="subheading mb-3 mt-3">[ACLN] Journals</div></span>
+<span id="pubASCL"><div class="subheading mb-3 mt-3">[ASCL] Others</div></span>
+<span id="pubACTI"><div class="subheading mb-3 mt-3">[ACTI] Conferences</div></span>
+<span id="pubACTN"><div class="subheading mb-3 mt-3">[ACTN] Conferences</div></span>
+<span id="pubCOM"><div class="subheading mb-3 mt-3">[COM] Conferences</div></span>
+<span id="pubOS"><div class="subheading mb-3 mt-3">[OS] Books and Chapters</div></span>
+<span id="pubDO"><div class="subheading mb-3 mt-3">[DO] Books and Chapters</div></span>
+<span id="pubAFF"><div class="subheading mb-3 mt-3">[AFF] Posters</div></span>
+<span id="pubAP"><div class="subheading mb-3 mt-3">[AP] Preprints</div></span>
+<span id="pubTH"><div class="subheading mb-3 mt-3">[TH] Dissertations</div></span>
+<span id="pubINV"><div class="subheading mb-3 mt-3">[INV] Invited Talks</div></span>
+<span id="pubPV"><div class="subheading mb-3 mt-3">[PV] Popularization</div></span>
+
+<!-- provide a subset of the publications based on a keyword -->
+<!--
+<span id="pubGeneralisation"><div class="subheading mb-3 mt-3">Généralisation</div></span>
+<script> getKeywordPublicationsAuthorStartYear('guillaume-touya', 'Généralisation', 2006, "pubGeneralisation"); </script>
+-->
+</div>
+</section>
 
 
 
 
+
+
+<hr class="m-0">
 
 </div>
 

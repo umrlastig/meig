@@ -1,4 +1,5 @@
-# meig
+# MEIG
+
 MEIG team webpages repo
 
 

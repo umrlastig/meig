@@ -36,20 +36,22 @@
 				header: true,
 				step: function(row) {
 					if(row.data[0].firstname.localeCompare("") != 0){
-						if(row.data[0].team == "MEIG" && row.data[0].member == 'true'){
+						if(row.data[0].team == "MEIG"){
 							var parent = document.getElementById("permanent-container");
 							if(row.data[0].perm == 'false'){
 								var parent = document.getElementById("non-permanent-container");
-							} else if (row.data[0].end_date != ''){
-								var d1 = new Date();
-								var d2 = new Date(row.data[0].end_date);
-								if (d2.getTime() < d1.getTime()) {
-									var parent = document.getElementById("alumni-container");
+							    if (row.data[0].end_date != '') {
+									var d1 = new Date();
+									var d2 = new Date(row.data[0].end_date);
+									if (d2.getTime() < d1.getTime()) {
+										var parent = document.getElementById("alumni-container");
+									}
 								}
 							}
-							divForAllPeople(parent, row.data);}
+							divForAllPeople(parent, row.data);
 						}
-					},
+					}
+				},
 				complete: function() {
 					var classes = [".lang-fr", ".lang-en"];
         			var lang = document.getElementById('select-lang').selectedIndex;

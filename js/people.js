@@ -63,7 +63,7 @@
 				});
 			return data;
 		})
-	        .then(function() { $("select-lang").selectpicker(); });
+	    .then(function() { $("select-lang").selectpicker(); });
   };
 
   function divForAllPeople(parentElement, data) {

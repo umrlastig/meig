@@ -42,11 +42,11 @@
 								var parent = document.getElementById("non-permanent-container");
 							}
 							if (row.data[0].end_date != '') {
-								var d1 = new Date();
-								var d2 = new Date(row.data[0].end_date);
-								if (d2.getTime() < d1.getTime()) {
-									var parent = document.getElementById("alumni-container");
-								}
+								#var d1 = new Date();
+								#var d2 = new Date(row.data[0].end_date);
+								#if (d2.getTime() < d1.getTime()) {
+								var parent = document.getElementById("alumni-container");
+								#}
 							}
 							
 							divForAllPeople(parent, row.data);

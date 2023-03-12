@@ -38,10 +38,9 @@
 					if(row.data[0].firstname.localeCompare("") != 0){
 						if(row.data[0].team == "MEIG" && row.data[0].member == 'true'){
 							var parent = document.getElementById("permanent-container");
-							if(row.data[0].status == 'PhD student' || row.data[0].status == 'Post-doc'){
+							if(row.data[0].perm == 'false'){
 								var parent = document.getElementById("non-permanent-container");
-							}
-							if (row.data[0].end_date != ''){
+							} else if (row.data[0].end_date != ''){
 								var d1 = new Date();
 								var d2 = new Date(row.data[0].end_date);
 								if (d2.getTime() < d1.getTime()) {
